@@ -13,12 +13,12 @@ Designed for high-throughput backends, Role-Based Access Control (RBAC), and rem
 
 ## Features
 
-- рџђ **Sub-nanosecond Performance:** Core operations (`Has`, `Overlaps`, `Contains`) execute in ~0.30вЂ“0.90 ns using hardware CPU instructions (`POPCNT`, `TZCNT`).
-- рџђ **Zero Heap Allocations:** All core mask operations, bit twiddling, and iterators run at `0 B/op` and `0 allocs/op`.
-- рџђ **Type-Safe Generics:** Works seamlessly with custom enum types (`type Permission uint64`) via Go generics (`~uint...`).
-- рџђ **Database & JSON Ready:** First-class support for `database/sql` (`sql.Scanner` / `driver.Valuer`), `json.Marshaler`, and `encoding.TextMarshaler` (YAML / TOML / query params).
-- рџђ **Go 1.23+ Native Iterators:** Efficient iteration over set flags (`for flag := range mask.All()`) without allocating intermediate slices.
-- рџђ **CLI-Ready String Mapping:** Automatic parsing and formatting (`ParseAuto`, `Strings`) using your enum's `String()` method without manual map declarations.
+- 🐘 **Sub-nanosecond Performance:** Core operations (`Has`, `Overlaps`, `Contains`) execute in ~0.30вЂ“0.90 ns using hardware CPU instructions (`POPCNT`, `TZCNT`).
+- 🐘 **Zero Heap Allocations:** All core mask operations, bit twiddling, and iterators run at `0 B/op` and `0 allocs/op`.
+- 🐘 **Type-Safe Generics:** Works seamlessly with custom enum types (`type Permission uint64`) via Go generics (`~uint...`).
+- 🐘 **Database & JSON Ready:** First-class support for `database/sql` (`sql.Scanner` / `driver.Valuer`), `json.Marshaler`, and `encoding.TextMarshaler` (YAML / TOML / query params).
+- 🐘 **Go 1.23+ Native Iterators:** Efficient iteration over set flags (`for flag := range mask.All()`) without allocating intermediate slices.
+- 🐘 **CLI-Ready String Mapping:** Automatic parsing and formatting (`ParseAuto`, `Strings`) using your enum's `String()` method without manual map declarations.
 
 ---
 
